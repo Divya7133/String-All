@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="adress" class="com.mvn.DependencyInjectionObject.AddressBean"> 
+		<constructor-arg value="3-51"/>
+		<constructor-arg value="divya"/>
+		<constructor-arg value="telangana"/>
+		<constructor-arg value="509336"/>
+	</bean>
+	<bean id=" student" class="com.mvn.DependencyInjectionObject.StudentBean"> 
+		<constructor-arg value="1"/>
+		<constructor-arg value="divya"/>
+		<constructor-arg ref="adress"/>
+		
+	</bean>
+</beans>
+

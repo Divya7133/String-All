@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="school" class="com.mvn.collection_all.Employee"> 
+		<constructor-arg>
+			<list>
+				<value>divya</value>
+			</list>
+		</constructor-arg>
+		
+		<constructor-arg>
+			<set>
+				<value>8</value>
+			</set>
+		</constructor-arg>
+		
+		<constructor-arg>
+			<map>
+				<entry key="dep1" value="electrical"/>
+			</map>
+		</constructor-arg>
+		
+		<constructor-arg>
+			<props>
+				<prop key="sal">400000</prop>
+			</props>
+		</constructor-arg>
+		
+	</bean>
+</beans>
